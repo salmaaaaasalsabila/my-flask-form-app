@@ -7,7 +7,7 @@ def home():
     message = ""
     if request.method == "POST":
         name = request.form.get("name")
-        message = f"Halo, {name}!"
+        message = f"How are u, {name}!"
     return render_template("index.html", message=message)
 
 if __name__ == "__main__":
